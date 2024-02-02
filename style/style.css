@@ -470,8 +470,24 @@ body {
   border-color: var(--color-blue);
   color: var(--color-blue);
 }
-/*Pie de pagina*/
+.swiper-slide__choose--grey {
+  border-color: var(--gray-text);
+  color: var(--gray-text);
+}
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--warn-black);
+}
+.swiper-button-prev:after {
+  left: -3.5rem;
+}
+.swiper-button-next:after {
+  right: -3.5rem;
+}
+/*Pie de pagina*/
 .footer {
   display: flex;
   justify-content: space-evenly;
