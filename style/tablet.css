@@ -1,0 +1,24 @@
+:root {
+  --font-2lg: 3rem;
+  --font-lg: 2.4rem;
+  --font-md: 1.8rem;
+  --font-smd: 1.6rem;
+  --font-sm: 1.4rem;
+}
+.header {
+  height: 36rem;
+}
+.header__titulo {
+  font-size: var(--font-2lg);
+  max-width: 340px;
+}
+
+.header__parrafo {
+  font-size: var(--font-smd);
+}
+/********************************************/
+/*Seccion de bitcoins*/
+.bitcoins__logo {
+  width: 25rem;
+  height: 25rem;
+}
