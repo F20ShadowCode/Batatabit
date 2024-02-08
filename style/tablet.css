@@ -31,3 +31,118 @@
   max-width: 360px;
   font-size: var(--font-smd);
 }
+
+/********************************************/
+/*contenedor de graficos*/
+.bitcoins__contentCoins {
+  margin-top: 6rem;
+}
+
+/*gráfico de compañías*/
+.coins {
+  width: 29rem;
+  height: 27rem;
+}
+.coins__title {
+  font-size: 19px;
+  left: -5rem;
+}
+
+.coins__graphic {
+  width: 23rem;
+  height: 18rem;
+}
+
+.coins__graphic__company {
+  font-size: var(--font-md);
+}
+
+.coins__graphic__price {
+  font-size: var(--font-smd);
+}
+
+.coins__graphic__price span {
+  margin-left: 1.2rem;
+}
+
+.coins__arrow {
+  width: 1.5rem;
+}
+
+.coins__actualizado {
+  width: 21rem;
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+/********************************************/
+/*Seccion de productos*/
+.products {
+  margin-top: 5rem;
+}
+
+.products__batata {
+  top: -1.8rem;
+  left: calc(50% - 3.1rem);
+  width: 6.2rem;
+  height: 3.6rem;
+}
+
+.products__title {
+  font-size: 2.6rem;
+}
+
+.products__paragraph {
+  font-size: var(--font-smd);
+}
+
+.cards {
+  max-width: 720px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 5rem;
+}
+
+.cards__card {
+  height: 17rem;
+  max-width: 348px;
+  padding: 1.5rem;
+}
+
+.cards__icono {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.cards__title {
+  font-size: var(--font-lg);
+}
+
+.cards__paragraph {
+  font-size: var(--font-smd);
+}
+
+/********************************************/
+/*Seccion de imagen de fondo*/
+
+.background {
+  height: 45rem;
+  background-image: url("../assets/img/bitcoinbaby2x.png");
+}
+
+.background__title {
+  font-size: var(--font-2lg);
+}
+/********************************************/
+/*Pie de pagina*/
+.footer__link {
+  font-size: var(--font-smd);
+}
+
+.footer__batata {
+  width: 6rem;
+}
+
+.footer__link--small {
+  font-size: 1.1rem;
+}

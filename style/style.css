@@ -232,7 +232,6 @@ body {
   position: absolute;
   top: 0;
   left: calc(50% - 133px);
-
   transform: translateX(200%);
   transition: transform 0.3s;
 }
@@ -253,9 +252,8 @@ body {
   left: 0;
   transform: rotateY(180deg);
 }
-
+/********************************************/
 /*Seccion de productos*/
-
 .products {
   position: relative;
   text-align: center;
@@ -296,7 +294,7 @@ body {
 
 .cards__card {
   height: 15.3rem;
-  max-width: 350px;
+  max-width: 348px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -323,7 +321,7 @@ body {
   color: #808080;
   line-height: 1.8rem;
 }
-
+/********************************************/
 /*Seccion de imagen de fondo*/
 
 .background {
@@ -393,10 +391,6 @@ body {
   margin: 0 auto;
   padding: 2rem 1rem;
   overflow: hidden;
-}
-
-.swiper-hero .swiper-slide--last {
-  /* margin-right: 1.2rem !important; */
 }
 
 .swiper-slide__recommended {
@@ -476,6 +470,7 @@ body {
 .swiper-button-next:after {
   position: absolute;
   font-size: 3rem;
+  font-weight: 700;
   color: var(--warn-black);
 }
 .swiper-button-prev:after {
