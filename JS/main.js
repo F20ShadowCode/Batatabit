@@ -28,4 +28,12 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 1024px
+    1024: {
+      enabled: false,
+    },
+  },
 });

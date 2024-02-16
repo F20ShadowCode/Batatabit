@@ -143,12 +143,39 @@
 
 /********************************************/
 /*Seccion de planes*/
+
 .plans__title {
   font-size: var(--font-2lg);
 }
 
 .plans__paragraph {
   font-size: var(--font-md);
+}
+
+.plans__containers {
+  max-width: 1000px;
+  height: 40rem;
+  margin: 7rem auto;
+  box-shadow: none;
+  padding-bottom: 5rem;
+}
+
+.swiper-wrapper {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.swiper-hero .swiper-slide {
+  max-height: 90%;
+  padding: 2rem 1rem;
+  margin: 0 0 !important;
+  border-radius: 0.9rem;
+  box-shadow: 0 4px 8px 0 #59491e29;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
 }
 /********************************************/
 /*Pie de pagina*/
