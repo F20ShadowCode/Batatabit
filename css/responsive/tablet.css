@@ -1,20 +1,16 @@
-:root {
-  --font-2lg: 3rem;
-  --font-lg: 2.4rem;
-  --font-md: 1.8rem;
-  --font-smd: 1.6rem;
-  --font-sm: 1.4rem;
-}
-.header {
+/********************************************/
+/*Seccion del header*/
+.l-header {
   height: 36rem;
 }
-.header__titulo {
+.header__title {
+  max-width: 360px;
   font-size: var(--font-2lg);
-  max-width: 340px;
 }
 
-.header__parrafo {
-  font-size: var(--font-smd);
+.header__text {
+  max-width: 320px;
+  font-size: var(--font-2md);
 }
 /********************************************/
 /*Seccion de bitcoins*/
@@ -23,29 +19,28 @@
   height: 25rem;
 }
 
-.bitcoins__info__title {
+.bitcoins__title {
   font-size: 2.7rem;
 }
 
-.bitcoins__info__paragraph {
+.bitcoins__text {
   max-width: 360px;
-  font-size: var(--font-smd);
+  font-size: var(--font-2md);
 }
 
 /********************************************/
 /*contenedor de graficos*/
-.bitcoins__contentCoins {
+.coins {
   margin-top: 6rem;
 }
 
-/*gráfico de compañías*/
-.coins {
+/*gráfico de plataformas*/
+.coins__contentGraphics {
   width: 29rem;
   height: 27rem;
 }
 .coins__title {
-  font-size: 19px;
-  left: -5rem;
+  font-size: var(--font-3md);
 }
 
 .coins__graphic {
@@ -53,23 +48,11 @@
   height: 18rem;
 }
 
-.coins__graphic__company {
-  font-size: var(--font-md);
-}
-
-.coins__graphic__price {
-  font-size: var(--font-smd);
-}
-
-.coins__graphic__price span {
-  margin-left: 1.2rem;
-}
-
 .coins__arrow {
   width: 1.5rem;
 }
 
-.coins__actualizado {
+.coins__updated {
   width: 21rem;
   font-size: 1.4rem;
   margin-top: 1.4rem;
@@ -77,58 +60,55 @@
 
 /********************************************/
 /*Seccion de productos*/
-.products {
+.l-products {
   margin-top: 5rem;
   padding-bottom: 6rem;
 }
 
 .products__batata {
-  top: -1.8rem;
-  left: calc(50% - 3.1rem);
   width: 6.2rem;
   height: 3.6rem;
+  top: -1.8rem;
+  left: calc(50% - 3.1rem);
 }
 
 .products__title {
   font-size: 2.6rem;
 }
 
-.products__paragraph {
-  font-size: var(--font-smd);
+.products__text {
+  font-size: var(--font-2md);
 }
 
-.cards {
-  max-width: 720px;
+.products__contentCards {
+  max-width: 72rem;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 5rem;
 }
 
-.cards__card {
+.products__card {
   height: 17rem;
-  max-width: 348px;
-  padding: 1.5rem;
 }
 
-.cards__icono {
+.products__cardIcono {
   width: 2.7rem;
   height: 2.7rem;
 }
 
-.cards__title {
-  font-size: var(--font-lg);
+.products__cardTitle {
+  font-size: var(--font-3md);
 }
-
-.cards__paragraph {
-  font-size: var(--font-smd);
+.products__cardText {
+  font-size: var(--font-md);
 }
 
 /********************************************/
 /*Seccion de imagen de fondo*/
 
-.background {
+.l-background {
   height: 45rem;
-  background-image: url("../assets/img/bitcoinbaby2x.png");
+  background-image: url("../../assets/img/bitcoinbaby2x.png");
 }
 
 .background__title {
@@ -137,7 +117,7 @@
 /********************************************/
 /*Pie de pagina*/
 .footer__link {
-  font-size: var(--font-smd);
+  font-size: var(--font-2md);
 }
 
 .footer__batata {

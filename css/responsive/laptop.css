@@ -1,33 +1,25 @@
-:root {
-  --font-3lg: 3.7rem;
-  --font-2lg: 3rem;
-  --font-lg: 2.4rem;
-  --font-2md: 2rem;
-  --font-md: 1.8rem;
-  --font-smd: 1.6rem;
-  --font-sm: 1.4rem;
-}
-.header {
+.l-header {
   height: 40rem;
 }
-.header__titulo {
+.header__title {
   font-size: var(--font-3lg);
-  max-width: 380px;
+  max-width: 440px;
 }
 
-.header__parrafo {
-  font-size: var(--font-smd);
+.header__text {
+  font-size: var(--font-2md);
 }
 
-.header__btnPlanes {
+.header__btnPlans {
   width: 26rem;
   height: 5rem;
-  font-size: var(--font-smd);
+  font-size: var(--font-md);
   gap: 1.5rem;
   border-radius: 0.5rem;
   bottom: -2.5rem;
   left: calc(50% - 13rem);
   transform: translateX(-9px);
+  cursor: pointer;
 }
 /********************************************/
 /*Seccion de bitcoins*/
@@ -36,47 +28,25 @@
   height: 32rem;
 }
 
-.bitcoins__info__title {
+.bitcoins__title {
   font-size: var(--font-2lg);
 }
 
-.bitcoins__info__paragraph {
+.bitcoins__text {
   max-width: 380px;
-  font-size: var(--font-md);
 }
 
 /********************************************/
-/*contenedor de graficos*/
-.bitcoins__contentCoins {
-  margin-top: 6rem;
-}
 
-/*gráfico de compañías*/
-.coins {
+/*gráfico de plataformas*/
+.coins__contentGraphics {
   width: 31rem;
   height: 29rem;
-}
-.coins__title {
-  font-size: var(--font-2md);
-  left: -5rem;
 }
 
 .coins__graphic {
   width: 25rem;
   height: 20rem;
-}
-
-.coins__graphic__company {
-  font-size: var(--font-2md);
-}
-
-.coins__graphic__price {
-  font-size: var(--font-md);
-}
-
-.coins__graphic__price span {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .coins__arrow {
@@ -94,46 +64,30 @@
   height: 4rem;
   transition: transform 0.4s ease-in-out;
 }
-.products__batata:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
 
 .products__title {
   font-size: var(--font-2lg);
 }
 
-.products__paragraph {
-  font-size: var(--font-md);
-}
-
-.cards {
-  max-width: 720px;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  gap: 5rem;
+.products__contentCards {
   margin-top: 5.5rem;
 }
 
-.cards__card {
-  height: 18rem;
-  max-width: 352px;
+.products__card {
+  height: 19rem;
+  max-width: 35.4rem;
   padding: 2rem;
 }
 
-.cards__icono {
+.products__cardIcono {
   width: 2.8rem;
   height: 2.8rem;
-}
-
-.cards__paragraph {
-  line-height: var(--font-2md);
 }
 
 /********************************************/
 /*Seccion de imagen de fondo*/
 
-.background {
+.l-background {
   height: 48rem;
   background-attachment: fixed;
 }
@@ -148,11 +102,11 @@
   font-size: var(--font-2lg);
 }
 
-.plans__paragraph {
+.plans__text {
   font-size: var(--font-md);
 }
 
-.plans__containers {
+.plans__container {
   max-width: 1000px;
   height: 40rem;
   margin: 7rem auto;
@@ -165,9 +119,8 @@
   justify-content: space-evenly;
 }
 
-.swiper-hero .swiper-slide {
+.plans__swiper .swiper-slide {
   max-height: 90%;
-  padding: 2rem 1rem;
   margin: 0 0 !important;
   border-radius: 0.9rem;
   box-shadow: 0 4px 8px 0 #59491e29;
@@ -180,11 +133,11 @@
 /********************************************/
 /*Pie de pagina*/
 .footer__link {
-  font-size: var(--font-md);
+  /* font-size: var(--font-md); */
 }
 
 .footer__batata {
-  width: 8rem;
+  width: 6.4rem;
 }
 
 .footer__link--small {

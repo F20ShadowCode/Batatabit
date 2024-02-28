@@ -8,18 +8,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!--Enlace de hoja de estilos principal-->
-    <link rel="stylesheet" href="./style/style.css" />
+    <!--Enlace de hoja de estilos base-->
+    <link rel="stylesheet" href="./css/base/base.css" />
+    <!--Enlace de hoja de estilos layout-->
+    <link rel="stylesheet" href="./css/layout/layout.css" />
+    <!--Enlace de hoja de estilos modules-->
+    <link rel="stylesheet" href="./css/modules/modules.css" />
+    <!--Enlace de hoja de estilos states-->
+    <link rel="stylesheet" href="./css/state/state.css" />
+
     <!--Enlace  de hoja de estilos para tablet-->
     <link
       rel="stylesheet"
-      href="./style/tablet.css"
+      href="./css/responsive/tablet.css"
       media="(min-width:768px)"
     />
     <!--Enlace  de hoja de estilos para laptop-->
     <link
       rel="stylesheet"
-      href="./style/laptop.css"
+      href="./css/responsive/laptop.css"
       media="(min-width:1024px)"
     />
     <link
@@ -30,75 +37,78 @@
     <title>Batatabit</title>
   </head>
   <body>
-    <main>
-      <header class="header">
+    <main class="l-main">
+      <!--*******************************************************-->
+      <!--Header-->
+      <header class="l-header">
         <figure class="header__logo">
           <img
             src="./assets/img/logo.svg"
             alt="Logo principal de la pagina"
-            class="header__logo__img"
+            class="header__img"
           />
         </figure>
         <section class="header__content">
-          <h1 class="header__titulo">
+          <h1 class="header__title">
             La próxima revolución en el intercambio de criptomonedas.
           </h1>
-          <p class="header__parrafo">
+          <p class="header__text">
             Batatabit te ayudara a navegar entre los diferentes precios y
             tendencias.
           </p>
         </section>
-        <button onclick="location.href='#plans'" class="header__btnPlanes">
+        <button onclick="location.href='#plans'" class="header__btnPlans flex">
           Conoce nuestros planes
           <img src="./assets/icons/down-arrow.svg" alt="" />
         </button>
       </header>
-
-      <section class="bitcoins">
+      <!--*******************************************************-->
+      <!--Sección de imagen y gráficos de plataformas Bitcoin-->
+      <section class="l-bitcoins">
         <figure class="bitcoins__logo">
           <img
             src="./assets/img/Bitcoin.svg"
             alt=""
-            class="bitcoins__logo__img"
+            class="bitcoins__imgBitcoin"
           />
         </figure>
 
-        <div class="bitcoins__info">
-          <h2 class="bitcoins__info__title">
+        <div class="bitcoins__content">
+          <h2 class="bitcoins__title">
             Visibilizamos todas las tasas de cambio.
           </h2>
-          <p class="bitcoins__info__paragraph">
+          <p class="bitcoins__text">
             Traemos información en tiempo real de las casas de cambio y las
             monedas mas importantes del mundo.
           </p>
         </div>
 
-        <section class="bitcoins__contentCoins">
-          <div class="coins coins--companys">
+        <section class="coins">
+          <div class="coins__contentGraphics coins__contentGraphics--companys">
             <h2 class="coins__title">Monedas</h2>
-
-            <div class="coins__graphic">
-              <h3 class="coins__graphic__company">Bitcoin</h3>
-              <p class="coins__graphic__price">
+            <!--Gráfico de plataforma y monedas-->
+            <div class="coins__graphic coins__graphic--orange">
+              <h3 class="coins__platform coins__orange flex">Bitcoin</h3>
+              <p class="coins__price coins__orange flex">
                 $ 1.96
                 <span
                   ><img src="./assets/icons/trending-down.svg" alt=""
                 /></span>
               </p>
-              <h3 class="coins__graphic__company">Ethereum</h3>
-              <p class="coins__graphic__price">
+              <h3 class="coins__platform coins__orange flex">Ethereum</h3>
+              <p class="coins__price coins__orange flex">
                 $ 0.06
                 <span><img src="./assets/icons/trending-up.svg" alt="" /></span>
               </p>
-              <h3 class="coins__graphic__company">Ripple</h3>
-              <p class="coins__graphic__price">
+              <h3 class="coins__platform coins__orange flex">Ripple</h3>
+              <p class="coins__price coins__orange flex">
                 $ 2.15
                 <span
                   ><img src="./assets/icons/trending-down.svg" alt=""
                 /></span>
               </p>
-              <h3 class="coins__graphic__company">Stellar</h3>
-              <p class="coins__graphic__price">
+              <h3 class="coins__platform coins__orange flex">Stellar</h3>
+              <p class="coins__price coins__orange flex">
                 $ 4.96
                 <span
                   ><img src="./assets/icons/trending-down.svg" alt=""
@@ -110,129 +120,130 @@
               alt=""
               class="coins__arrow coins__arrow--right"
             />
-            <p class="coins__actualizado">
+            <p class="coins__updated flex">
               <span>Actualizado:</span> 20 de Julio 2:13
             </p>
           </div>
 
-          <div class="coins coins--comisions">
+          <div class="coins__contentGraphics coins__contentGraphics--comisions">
             <h2 class="coins__title coins__title--blue">Comisiones</h2>
-
-            <div class="coins__graphic">
-              <h3 class="coins__graphic__company">Bitrade</h3>
-              <p class="coins__graphic__price">$ 12.96</p>
-              <h3 class="coins__graphic__company">Bitpreco</h3>
-              <p class="coins__graphic__price">$ 10.07</p>
-              <h3 class="coins__graphic__company">Novadax</h3>
-              <p class="coins__graphic__price">$ 13.15</p>
-              <h3 class="coins__graphic__company">Coinext</h3>
-              <p class="coins__graphic__price">$ 14.96</p>
+            <!--Gráfico de comisiones-->
+            <div class="coins__graphic coins__graphic--blue">
+              <h3 class="coins__platform coins__blue flex">Bitrade</h3>
+              <p class="coins__price coins__blue flex">$ 12.96</p>
+              <h3 class="coins__platform coins__blue flex">Bitpreco</h3>
+              <p class="coins__price coins__blue flex">$ 10.07</p>
+              <h3 class="coins__platform coins__blue flex">Novadax</h3>
+              <p class="coins__price coins__blue flex">$ 13.15</p>
+              <h3 class="coins__platform coins__blue flex">Coinext</h3>
+              <p class="coins__price coins__blue flex">$ 14.96</p>
             </div>
             <img
               src="./assets/icons/right-arrow.svg"
               alt=""
-              class="coins__arrow coins__arrow--left"
+              class="coins__arrow coins__arrow--left flex"
             />
-            <p class="coins__actualizado coins__actualizado--blue">
+            <p class="coins__updated coins__updated--blue flex">
               <span>Actualizado:</span>20 de Julio 2:16
             </p>
           </div>
         </section>
       </section>
-
-      <section class="products">
+      <!--*******************************************************-->
+      <!--Sección de cartas sobre los productos ofrecidos-->
+      <section class="l-products">
         <img
           src="./assets/icons/batata.svg"
           alt="Imagen de un logo de batata"
           class="products__batata"
         />
 
-        <div class="products__texts">
+        <div class="products__content">
           <h2 class="products__title">Creamos un producto sin comparacion.</h2>
-          <p class="products__paragraph">
-            Confiable y diseñado para su uso diario.
-          </p>
+          <p class="products__text">Confiable y diseñado para su uso diario.</p>
         </div>
 
-        <section class="cards">
-          <div class="cards__card">
+        <section class="products__contentCards">
+          <div class="products__card">
             <img
               src="./assets/icons/clock.svg"
               alt="Icono de un reloj"
-              class="cards__icono"
+              class="products__cardIcono"
             />
-            <h2 class="cards__title">Tiempo real</h2>
-            <p class="cards__paragraph">
+            <h2 class="products__cardTitle">Tiempo real</h2>
+            <p class="products__cardText">
               Nuestra API toma informacion minuto a minuto sobre las tasas que
               mas determinan el comportamiento.
             </p>
           </div>
 
-          <div class="cards__card">
+          <div class="products__card">
             <img
               src="./assets/icons/eye.svg"
               alt="Icono de un ojo"
-              class="cards__icono"
+              class="products__cardIcono"
             />
-            <h2 class="cards__title">No hay tasas escondidas</h2>
-            <p class="cards__paragraph">
+            <h2 class="products__cardTitle">No hay tasas escondidas</h2>
+            <p class="products__cardText">
               Ni en a compra o al momento de exit, Batatabit siempre te muestra
               el costo real de lo que estas adquiriendo.
             </p>
           </div>
 
-          <div class="cards__card">
+          <div class="products__card">
             <img
               src="./assets/icons/dollar-sign.svg"
-              alt="Icono de un sindo de dinero"
-              class="cards__icono"
+              alt="Icono de un signo de dinero"
+              class="products__cardIcono"
             />
-            <h2 class="cards__title">Compra monedas</h2>
-            <p class="cards__paragraph">
+            <h2 class="products__cardTitle">Compra monedas</h2>
+            <p class="products__cardText">
               No mas rumores, con Batatabit sabras el valor real de cada moneda
               en el mercado actual.
             </p>
           </div>
 
-          <div class="cards__card">
+          <div class="products__card">
             <img
               src="./assets/icons/check-circle.svg"
               alt="Icono de un circulo"
-              class="cards__icono"
+              class="products__cardIcono"
             />
-            <h2 class="cards__title">Informacion confiable</h2>
-            <p class="cards__paragraph">
-              Nuestras fuentes estan 100% verificadas y continuamos auditando su
+            <h2 class="products__cardTitle">Información confiable</h2>
+            <p class="products__cardText">
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
               contenido mientras se actualizan.
             </p>
           </div>
         </section>
       </section>
-
-      <section class="background">
+      <!--*******************************************************-->
+      <!--Sección de imagen de fondo-->
+      <section class="l-background">
         <h2 class="background__title">Conócelo hoy.</h2>
       </section>
-
-      <section class="plans" id="plans">
+      <!--*******************************************************-->
+      <!--Sección del slider sobre planes ofrecidos-->
+      <section class="l-plans" id="plans">
         <h2 class="plans__title">Escoge el plan que mejor se adapte a ti.</h2>
-        <p class="plans__paragraph">
+        <p class="plans__text">
           Cualquier plan te da acceso total a nuestra plataforma.
         </p>
-        <section class="plans__containers">
+        <section class="plans__container">
           <!-- Slider main container -->
-          <div class="swiper swiper-hero">
+          <div class="swiper plans__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slide de plan recomendado-->
               <div class="swiper-slide">
-                <a href="" class="swiper-slide__recommended">Recomendado</a>
+                <a href="" class="plans__swiperRecommended flex">Recomendado</a>
 
-                <p class="swiper-slide__pay">Pago Anual</p>
-                <h2 class="swiper-slide__price"><span>$</span>99</h2>
-                <p class="swiper-slide__description">
+                <p class="plans__swiperPay">Pago Anual</p>
+                <h2 class="plans__swiperPrice"><span>$</span>99</h2>
+                <p class="plans__swiperDescription">
                   *Ahorras $129 comparado con el plan mensual
                 </p>
-                <a href="#" class="swiper-slide__choose"
+                <a href="#" class="plans__swiperChoose flex"
                   >Escoge este
                   <img
                     src="./assets/icons/orange-right-arrow.svg"
@@ -243,18 +254,18 @@
               <div class="swiper-slide">
                 <a
                   href=""
-                  class="swiper-slide__recommended swiper-slide__recommended--blue"
+                  class="plans__swiperRecommended plans__swiperRecommended--blue"
                   >Básico</a
                 >
 
-                <p class="swiper-slide__pay">Pago Mensual</p>
-                <h2 class="swiper-slide__price"><span>$</span>19</h2>
-                <p class="swiper-slide__description">
+                <p class="plans__swiperPay">Pago Mensual</p>
+                <h2 class="plans__swiperPrice"><span>$</span>19</h2>
+                <p class="plans__swiperDescription">
                   *Plan básico aunque con todas las ventajas
                 </p>
                 <a
                   href="#"
-                  class="swiper-slide__choose swiper-slide__choose--blue"
+                  class="plans__swiperChoose plans__swiperChoose--blue flex"
                   >Escoge este
                   <img
                     src="./assets/icons/orange-right-arrow-blue.svg"
@@ -265,19 +276,19 @@
               <div class="swiper-slide swiper-slide--last">
                 <a
                   href=""
-                  class="swiper-slide__recommended swiper-slide__recommended--grey"
+                  class="plans__swiperRecommended plans__swiperRecommended--grey"
                   >Ilimitado</a
                 >
 
-                <p class="swiper-slide__pay">De por vida</p>
-                <h2 class="swiper-slide__price"><span>$</span>199</h2>
-                <p class="swiper-slide__description">
+                <p class="plans__swiperPay">De por vida</p>
+                <h2 class="plans__swiperPrice"><span>$</span>199</h2>
+                <p class="plans__swiperDescription">
                   *Exclusivo para los primeros 100 clientes con un precio
                   especial.
                 </p>
                 <a
                   href="#"
-                  class="swiper-slide__choose swiper-slide__choose--grey"
+                  class="plans__swiperChoose plans__swiperChoose--grey flex"
                   >Escoge este
                   <img
                     src="./assets/icons/orange-right-arrow-grey.svg"
@@ -292,8 +303,9 @@
         </section>
       </section>
     </main>
-
-    <footer class="footer">
+    <!--*******************************************************-->
+    <!--Footer-->
+    <footer class="l-footer">
       <ul class="footer__list">
         <li class="footer__item">
           <a href="#" class="footer__link">Linkedin</a>

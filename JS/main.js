@@ -1,13 +1,17 @@
-const coinsCompany = document.querySelector(".coins--companys");
-const coinsComisions = document.querySelector(".coins--comisions");
+const coinsCompany = document.querySelector(
+  ".coins__contentGraphics--companys"
+);
+const coinsComisions = document.querySelector(
+  ".coins__contentGraphics--comisions"
+);
 
 const arrows = document.querySelectorAll(".coins__arrow");
 
 // Slider
 arrows.forEach((item) => {
   item.addEventListener("click", () => {
-    coinsComisions.classList.toggle("coins--comisions--active");
-    coinsCompany.classList.toggle("coins--translate");
+    coinsComisions.classList.toggle("coins__contentGraphics--active");
+    coinsCompany.classList.toggle("coins__contentGraphics--translate");
   });
 });
 

@@ -1,0 +1,23 @@
+/*--Gráfico de plataforma y monedas*/
+
+.coins__orange:hover {
+  border-color: #ff9436ad;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.coins__blue:hover {
+  border-color: #1a9bf79d;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.products__batata:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.footer__batata:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
